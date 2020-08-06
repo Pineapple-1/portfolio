@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Limelight&display=swap');
+.font{
+    font-family: 'Limelight', serif;
+    animation: text 1.5s 1;
+    color: rgba(255, 255, 255, 0.815);
+    
+}
+.heading{
+    margin:auto;
+    text-align:center;
+    width:80%;
+    color:#888888;
+    padding-bottom: 20px;
+}
+@keyframes text{
+    0%{
+        color : #161618;
+        margin-bottom: -40px;
+       
+
+    }
+    30%{
+        
+        margin-bottom: -40px;
+      
+    }
+    85%{
+       
+        margin-bottom: -40px;
+    }
+
+}

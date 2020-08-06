@@ -1,0 +1,28 @@
+.footer{
+    height: 161px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#161618;;
+    line-height: 161px;
+    font-size: 17px;
+    padding: 10px;
+    word-spacing: 5px;
+    color:#969696;
+}
+@media(max-width:499px)
+{
+    .footer{
+        width: 95%;
+        padding: 5px;
+        text-align: left;
+       
+    }
+    .Vanish{
+        display: none;
+    }
+    .left{
+        padding-right: 100px;
+    }
+}

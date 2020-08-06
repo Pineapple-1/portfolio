@@ -1,0 +1,23 @@
+.root{
+    width: 385px;
+    margin: auto;
+    border: 0px solid  #161618;
+    border-radius: 0%;
+    border-style: none;
+    box-shadow: none;
+}
+.media{
+    height: 200px;
+    
+}
+
+@media(max-width:499px)
+{
+   .root{
+    margin-top: 5px;
+    width: 300px;
+   }
+    .media{
+        height:165;
+    }
+}
