@@ -4,12 +4,12 @@ import Rocket from './rocket/animation'
 import Footer from './footer/footer'
 const LandingPage =() =>{
     return(
-        <div style={{backgroundColor:"#161618"}}>
+        <div className={Styles.main}>
         <div  >
             <Rocket/>
         </div>
         <div className={Styles.heading}>
-            <h1 className={Styles.font}>Hello, Internet User.</h1>
+            <h2 className={Styles.font}>Hello, Internet User.</h2>
             <h5>I'm Abdulrehman, a javascript developer </h5>
            
         </div>

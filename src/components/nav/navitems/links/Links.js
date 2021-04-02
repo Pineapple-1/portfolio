@@ -12,7 +12,7 @@ const Links = ({toggle,setToggle}) =>{
              <li><Link style={{color: " rgba(255, 255, 255, 0.815)", fontSize:'11px',cursor: 'pointer'}}to="/Projects">Projects</Link></li>
              
          </ul>
-         <ul className ={Styles.fuck}><li style={{float:'right',marginTop:'7px',display: 'inline'}}><Icon toggle={toggle} setToggle={setToggle}/></li></ul>
+         <ul ><li style={{float:'right',marginTop:'7px',display: 'inline'}}><Icon toggle={toggle} setToggle={setToggle}/></li></ul>
          </div>
     )
 }
