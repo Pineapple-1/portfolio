@@ -11,19 +11,17 @@ import Projectimg2 from "../../../assets/tracker.png";
 import Projectimg3 from "../../../assets/todo.png";
 import Projectimg4 from "../../../assets/game.png";
 import Projectimg5 from "../../../assets/memories.JPG";
+import Projectimg6 from "../../../assets/insta.JPG";
 const Projects = () => {
   const [activeTab, setActiveTab] = useState(0);
   const projects = () => {
     if (activeTab === 0) {
       return (
         <div>
-          <Grid
-            container
-            spacing={4}
-          >
+          <Grid container spacing={4}>
             <Card
               title="Chat box"
-              des="Chat box app is devloped in react and socket.io in which we can live chat with each other."
+              des="Chat box app is developed in react and socket.io in which we can live chat with each other."
               pic={Projectimg1}
               git="https://github.com/Pineapple-1/Chat-Application"
               live="https://chat-box-react-app.netlify.app/"
@@ -44,19 +42,18 @@ const Projects = () => {
             />
             <Card
               title="Memories"
-              des="A social media app which allows users to create memories and share them with each other."
+              des="A social media app developed in mern stack which allows users to create memories and share them with each other."
               pic={Projectimg5}
               git="https://github.com/Pineapple-1/Memories"
               live="https://react-memories-app.netlify.app/"
             />
-              <Card
-              title="Memories"
-              des="A social media app which allows users to create memories and share them with each other."
-              pic={Projectimg5}
-              git="https://github.com/Pineapple-1/Memories"
-              live="https://react-memories-app.netlify.app/"
+            <Card
+              title="Instagram-clone"
+              des="Instagram-clone instagram clone developed in react and firebase user auth"
+              pic={Projectimg6}
+              git="https://github.com/Pineapple-1/Instagram-clone"
+              live="https://instagram-4955d.web.app/"
             />
-
           </Grid>
         </div>
       );
@@ -94,34 +91,36 @@ const Projects = () => {
   const classes = useStyles();
 
   return (
-    
-     <Container>
-       
+    <Container>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-        <Paper className={classes.root} style={{ backgroundColor: "#161618", color: "rgba(255, 255, 255, 0.815)" }}>
-          <Tabs
-            value={activeTab}
-            onChange={(event, id) => {
-              setActiveTab(id);
+          <Paper
+            className={classes.root}
+            style={{
+              backgroundColor: "#161618",
+              color: "rgba(255, 255, 255, 0.815)",
             }}
-            indicatorColor="rgba(255, 255, 255, 0.815)"
-            textColor="rgba(255, 255, 255, 0.815)"
-            centered
           >
-            <Tab label="React.JS" />
-            <Tab label="JAVASCRIPT" />
-            <Tab label="C++" />
-          </Tabs>
-        </Paper>
+            <Tabs
+              value={activeTab}
+              onChange={(event, id) => {
+                setActiveTab(id);
+              }}
+              indicatorColor="rgba(255, 255, 255, 0.815)"
+              textColor="rgba(255, 255, 255, 0.815)"
+              centered
+            >
+              <Tab label="React.JS" />
+              <Tab label="JAVASCRIPT" />
+              <Tab label="C++" />
+            </Tabs>
+          </Paper>
         </Grid>
         <Grid item xs={12}>
-        <div className="content"> {projects()}</div>
+          <div className="content"> {projects()}</div>
         </Grid>
-       </Grid>
-       </Container>
-      
-
+      </Grid>
+    </Container>
   );
 };
 export default Projects;
