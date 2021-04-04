@@ -1,20 +1,19 @@
 body::-webkit-scrollbar-track
 {
 	
-	border-radius: 2px;
+
 	background-color: #F5F5F5;
 }
 
 body::-webkit-scrollbar
 {
-	width: 4px;
+	width: 3px;
 	
 	background-color: #F5F5F5;
 }
 body::-webkit-scrollbar-thumb
 {
-	border-radius: 2px;
-	;
+	border-radius: 4px;
 	background-color: #555;
 }
 body{

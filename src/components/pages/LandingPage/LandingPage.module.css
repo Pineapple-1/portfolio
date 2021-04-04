@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@500&family=Limelight&display=swap");
 .font {
   font-family: "Limelight", serif;
   animation: text 1.5s 1;
@@ -19,7 +19,7 @@
     color: #161618;
     margin-bottom: -40px;
   }
-  30% {
+  45% {
     color: #161618;
     margin-bottom: -40px;
   }
